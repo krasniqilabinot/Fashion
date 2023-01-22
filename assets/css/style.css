@@ -1,0 +1,296 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap");
+* {
+  font-family: "Oswald", sans-serif;
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+h1 {
+  color: #fff;
+  font-weight: 700;
+  font-size: 4.4433rem;
+  line-height: 1.1;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 2.3433rem;
+  line-height: 1.1;
+}
+
+h3 {
+  font-weight: 700;
+  font-size: 1.414rem;
+  line-height: 1.1;
+}
+
+.btn {
+  font-weight: 700;
+  letter-spacing: 1px;
+  padding: 15px;
+  text-decoration: none;
+  border-radius: 15px;
+  background-color: #111;
+  color: #fff;
+}
+
+.btn-more {
+  padding: 4px;
+  background-color: white;
+  color: black;
+  border-radius: initial;
+}
+
+.btn-prod {
+  width: 50%;
+  text-align: center;
+  background-color: #fff;
+  color: #fe7600;
+  border-bottom: 1px solid;
+  border: radius 0px;
+}
+
+.card {
+  color: #111;
+  background-color: #fff;
+  box-shadow: 10px 5px 5px rgb(149, 149, 149);
+  border-radius: 20px;
+  padding: 20px;
+}
+
+header {
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .container {
+  width: 900px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header img {
+  width: 60px;
+}
+header nav {
+  width: 50%;
+}
+header nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header a {
+  color: #fe7600;
+  text-decoration: none;
+  transform: all 2s ease-in-out;
+}
+header a:hover {
+  text-decoration: overline;
+  color: #111;
+}
+
+main {
+  width: 100%;
+  height: calc(100vh - 80px);
+  background-image: url("../images/fashion.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  filter: brightness(0.9);
+}
+main .title {
+  filter: drop-shadow(2px 4px 6px black);
+}
+main .btn {
+  background-color: #111;
+  color: #fff;
+  padding: 15px;
+}
+main .btn:hover {
+  background-color: #fe7600;
+  color: #111;
+  text-decoration: none;
+}
+main p {
+  margin: 50px 0;
+  color: #fff;
+}
+
+.fashion a {
+  text-decoration: none;
+  color: #fe7600;
+}
+.fashion h2 {
+  text-align: center;
+  padding: 50px;
+}
+.fashion .wrap {
+  width: 900px;
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr;
+  padding-bottom: 50px;
+  margin: 0 auto;
+}
+.fashion .wrap .text {
+  margin: auto;
+}
+.fashion .wrap .text ul {
+  list-style-type: none;
+}
+.fashion .wrap .text ul li {
+  font-size: 15px;
+  line-height: 2;
+  padding: 10px;
+}
+.fashion .wrap .text ul li::before {
+  content: "》";
+}
+.fashion .wrap .text ul li a {
+  color: #111;
+}
+.fashion .wrap .text ul li a:hover {
+  color: #fe7600;
+}
+.fashion .wrap .text ul li:hover {
+  color: #fe7600;
+}
+.fashion .wrap .photo img {
+  width: 100%;
+  height: 100%;
+}
+.fashion .wrap .desing {
+  margin-left: 15px;
+  padding: 10px;
+}
+.fashion .wrap .desing p {
+  color: #a9a9a9;
+  font-size: 16px;
+}
+.fashion .wrap .desing .btn {
+  background-color: #111;
+  color: #fff;
+}
+.fashion .wrap .desing .btn:hover {
+  background-color: #fe7600;
+  color: #111;
+  text-decoration: none;
+}
+
+.shop {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.shop .owners {
+  background-color: #f5faff;
+  padding: 49px;
+}
+.shop .owners a {
+  color: #fe7600;
+  text-decoration: none;
+}
+.shop .owners p {
+  color: #a9a9a9;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+.shop .owners .btn {
+  background-color: #111;
+  color: #fff;
+}
+.shop .owners .btn:hover {
+  background-color: #fe7600;
+  color: #111;
+  text-decoration: none;
+}
+
+.faetured h2 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.faetured .faetured-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.faetured .card {
+  color: #111;
+  background-color: #fff;
+  box-shadow: 10px 5px 5px rgb(149, 149, 149);
+  border-radius: 20px;
+  padding: 20px;
+  width: 80%;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+.faetured .card img {
+  border-radius: 5px 5px 0 0;
+}
+.faetured .card .container {
+  padding: 2px 16px;
+}
+
+.contact {
+  margin-top: 30px;
+}
+.contact .contact-info {
+  display: flex;
+  padding: 13px;
+}
+
+.footer-wrap {
+  background-color: #a9a9a9;
+}
+.footer-wrap .container-footer {
+  text-align: center;
+  display: contents;
+}
+.footer-wrap .container-footer .social-media {
+  padding: 20px;
+}
+.footer-wrap .container-footer p {
+  color: #fe7600;
+  padding: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  header nav {
+    display: none;
+  }
+  header .menu-icon {
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-image: url("../images/menu-icon.PNG");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+  }
+  header .menu-icon:hover {
+    background-image: url("../images/menu-icon-hov.PNG");
+  }
+  .fashion .wrap {
+    display: grid;
+    grid-template-columns: revert;
+    width: 100%;
+  }
+  .shop {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .faetured .faetured-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .contact .contact-info {
+    display: block;
+  }
+}/*# sourceMappingURL=style.css.map */
