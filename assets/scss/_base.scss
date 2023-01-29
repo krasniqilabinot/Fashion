@@ -34,11 +34,17 @@ h3{
 
 }
 .btn-more{
-    padding: 4px;
-    background-color: white;
-    color: black;
-    border-radius: initial;
+  padding: 4px;
+  width: 50%;
+  text-align: center;
+  background-color: #fff;
+  color: #fe7600;
+  border-bottom: 1px solid;
+  border-radius: 0px;
 
+  &:hover{
+    color: $cblack;
+}
 }
 .btn-prod{
     width: 50%;
@@ -46,7 +52,7 @@ h3{
     background-color: $cwhite;
     color: $corange;
     border-bottom: 1px solid;
-    border: radius 0px;;
+    border: radius 0px;
 }
 .card{
     color: $cblack;

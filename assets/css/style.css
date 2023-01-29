@@ -38,9 +38,15 @@ h3 {
 
 .btn-more {
   padding: 4px;
-  background-color: white;
-  color: black;
-  border-radius: initial;
+  width: 50%;
+  text-align: center;
+  background-color: #fff;
+  color: #fe7600;
+  border-bottom: 1px solid;
+  border-radius: 0px;
+}
+.btn-more:hover {
+  color: #111;
 }
 
 .btn-prod {
@@ -60,15 +66,7 @@ h3 {
   padding: 20px;
 }
 
-header {
-  height: 70px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
 header .container {
-  width: 900px;
-  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -133,7 +131,6 @@ main p {
   padding: 50px;
 }
 .fashion .wrap {
-  width: 900px;
   display: grid;
   grid-template-columns: 1fr 2fr 2fr;
   padding-bottom: 50px;
@@ -213,14 +210,31 @@ main p {
 }
 
 .faetured h2 {
+  margin: 55px 0 20px 0;
   text-align: center;
-  margin-bottom: 40px;
 }
-.faetured .faetured-grid {
+.faetured .container {
+  display: grid;
+}
+.faetured .container .btn-viwe {
+  margin-top: 10px;
+  text-align: center;
+}
+.faetured .container .btn-viwe .btn-more {
+  box-shadow: 2px 2px 4px;
+  padding: 7px;
+  border-radius: 5px;
+}
+.faetured .container .btn-viwe .btn-more:hover {
+  background-color: #fe7600;
+  color: #fff;
+}
+.faetured .container .faetured-grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
 }
-.faetured .card {
+.faetured .container .faetured-grid .card {
   color: #111;
   background-color: #fff;
   box-shadow: 10px 5px 5px rgb(149, 149, 149);
@@ -230,19 +244,25 @@ main p {
   margin-bottom: 10px;
   cursor: pointer;
 }
-.faetured .card img {
+.faetured .container .faetured-grid .card img {
   border-radius: 5px 5px 0 0;
-}
-.faetured .card .container {
-  padding: 2px 16px;
 }
 
 .contact {
   margin-top: 30px;
 }
+.contact h2 {
+  margin-left: 10px;
+}
 .contact .contact-info {
   display: flex;
   padding: 13px;
+}
+.contact .contact-info .maps-directions {
+  width: 100%;
+}
+.contact .contact-info .maps-directions iframe {
+  width: 100%;
 }
 
 .footer-wrap {
@@ -261,13 +281,17 @@ main p {
 }
 
 @media screen and (max-width: 768px) {
+  header {
+    display: block;
+    margin: 12px;
+  }
   header nav {
     display: none;
   }
   header .menu-icon {
     display: block;
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     background-image: url("../images/menu-icon.PNG");
     background-repeat: no-repeat;
     background-position: center center;
@@ -275,6 +299,18 @@ main p {
   }
   header .menu-icon:hover {
     background-image: url("../images/menu-icon-hov.PNG");
+  }
+  main {
+    height: 201px;
+  }
+  main h1 {
+    font-size: 2.4433rem;
+  }
+  main p {
+    margin: 19px 0px;
+  }
+  main .btn {
+    letter-spacing: 1px;
   }
   .fashion .wrap {
     display: grid;
@@ -285,12 +321,17 @@ main p {
     display: grid;
     grid-template-columns: 1fr;
   }
-  .faetured .faetured-grid {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  .faetured .container .faetured-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .contact {
+    text-align: center;
   }
   .contact .contact-info {
     display: block;
+  }
+  .meps-direct {
+    display: flex;
   }
 }/*# sourceMappingURL=style.css.map */

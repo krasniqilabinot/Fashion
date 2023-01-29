@@ -5,12 +5,8 @@
 
 //Header 
 header {
-    height: 70px;
-    @include flexSbAs;
 
     .container {
-        width: 900px;
-        margin: 0 auto;
         @include flexSbAs;
     }
 
@@ -26,7 +22,7 @@ header {
             @include flexSbAs;
         }
 
-        li {}
+
 
     }
 
@@ -73,7 +69,7 @@ main {
     }
 
     p {
-        margin:50px 0;
+        margin: 50px 0;
         color: $cwhite;
     }
 }
@@ -91,7 +87,6 @@ main {
     }
 
     .wrap {
-        width: 900px;
         display: grid;
         grid-template-columns: 1fr 2fr 2fr;
         padding-bottom: 50px;
@@ -160,24 +155,28 @@ main {
         }
     }
 }
+
 //SHOP
 .shop {
     width: 100%;
     display: grid;
-    grid-template-columns: 1fr 1fr ;
-    
-    .owners{
-        background-color:$caliceblue;
+    grid-template-columns: 1fr 1fr;
+
+    .owners {
+        background-color: $caliceblue;
         padding: 49px;
-        a{
+
+        a {
             color: $corange;
             text-decoration: none;
         }
+
         p {
             color: $cdarkgrey;
             font-size: 16px;
             margin-bottom: 10px;
         }
+
         .btn {
             background-color: $cblack;
             color: $cwhite;
@@ -190,108 +189,180 @@ main {
         }
     }
 }
+
 // FAETURED
-.faetured{
-    h2{
+.faetured {
+    h2 {
+        margin: 55px 0 20px 0;
         text-align: center;
-        margin-bottom: 40px;
+
     }
-    .faetured-grid{
+
+    .container {
         display: grid;
-        grid-template-columns: 1fr 1fr  1fr;
+
+        .btn-viwe {
+            margin-top: 10px;
+            text-align: center;
+
+            .btn-more {
+                box-shadow: 2px 2px 4px;
+                padding: 7px;
+                border-radius: 5px;
+
+                &:hover {
+                    background-color: $borange;
+                    color: $cwhite;
+                }
+            }
+        }
+
+        .faetured-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            justify-items: center;
+
+
+
+            .card {
+                color: $cblack;
+                background-color: $bwhite;
+                box-shadow: 10px 5px 5px rgb(149, 149, 149);
+                border-radius: 20px;
+                padding: 20px;
+                width: 80%;
+                margin-bottom: 10px;
+                cursor: pointer;
+
+
+                img {
+                    border-radius: 5px 5px 0 0;
+                }
+
+            }
+        }
     }
-    .card {
-        color: $cblack;
-        background-color: $bwhite;
-        box-shadow: 10px 5px 5px rgb(149, 149, 149);
-        border-radius: 20px;
-        padding: 20px;
-        width: 80%;
-        margin-bottom: 10px;
-        cursor: pointer;
-        
-      
-      img {
-        border-radius: 5px 5px 0 0;
-      }
-      
-      .container {
-        padding: 2px 16px;
-      }
-      }
 }
+
 //CONTAKT
-.contact{
+.contact {
     margin-top: 30px;
 
-    .contact-info{
+    h2 {
+        margin-left: 10px;
+    }
+
+    .contact-info {
         display: flex;
         padding: 13px;
+
+        .maps-directions {
+            width: 100%;
+
+            iframe {
+                width: 100%;
+            }
+        }
     }
 }
+
 //FOOTER
-.footer-wrap{
+.footer-wrap {
     background-color: $bdarkgrey;
 
-.container-footer{
-    text-align: center;
-    display: contents;
-    .social-media{
-        padding: 20px;
-    }
-    p{
-        color: $corange;
-        padding: 10px;
+    .container-footer {
+        text-align: center;
+        display: contents;
+
+        .social-media {
+            padding: 20px;
+        }
+
+        p {
+            color: $corange;
+            padding: 10px;
+        }
     }
 }
-}
+
 //MBILE VERSION
 @media screen and (max-width: 768px) {
-    header{
-        nav{
+    header {
+        display: block;
+        margin: 12px;
+
+        nav {
             display: none;
         }
-        .menu-icon{
-            display: block;
-            width: 40px;
-            height: 40px;
-            background-image: url('../images/menu-icon.PNG');
-           background-repeat: no-repeat;
-           background-position: center center;
-           background-size: cover;
 
-            &:hover{
+        .menu-icon {
+            display: block;
+            width: 30px;
+            height: 30px;
+            background-image: url('../images/menu-icon.PNG');
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+
+            &:hover {
                 background-image: url('../images/menu-icon-hov.PNG');
             }
         }
     }
 
-// FASHION
-.fashion{
-    .wrap{
-        display: grid;
-        grid-template-columns: revert;
-        width: 100%;
+    //Main
+    main {
+        height: 201px;
 
+        h1 {
+            font-size: 2.4433rem;
+        }
+
+        p {
+            margin: 19px 0px
+        }
+
+        .btn {
+            letter-spacing: 1px;
+        }
     }
-}
-//SHOP 
-.shop{
-    display: grid;
-    grid-template-columns: 1fr;
-}
-// FAETURED 
-.faetured{
-    .faetured-grid{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+
+    // FASHION
+    .fashion {
+        .wrap {
+            display: grid;
+            grid-template-columns: revert;
+            width: 100%;
+
+        }
     }
-}
-//CONTACT
-.contact{
-    .contact-info{
-        display: block;
+
+    //SHOP 
+    .shop {
+        display: grid;
+        grid-template-columns: 1fr;
     }
-}
+
+    // FAETURED 
+    .faetured {
+        .container {
+            .faetured-grid {
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
+    }
+
+    //CONTACT
+    .contact {
+        text-align: center;
+        .contact-info {
+            display: block;
+        }
+    }
+
+    //Meps
+    .meps-direct {
+        display: flex;
+    }
 }
