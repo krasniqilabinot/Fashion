@@ -267,38 +267,31 @@ main p {
 
 .footer-distributed {
   background: #a9a9a9;
-  box-sizing: border-box;
   padding: 50px 60px 40px;
   overflow: hidden;
 }
 .footer-distributed .footer-left {
   float: left;
 }
-.footer-distributed .footer-left h3 {
-  color: #fff;
-  font: normal 36px "Roboto", cursive;
-  margin: 0 0 10px;
-}
-.footer-distributed .footer-left h3 span {
+.footer-distributed .footer-left span {
   color: #fe7600;
   text-decoration: none;
 }
-.footer-distributed .footer-left h3 .footer-links {
+.footer-distributed .footer-left .footer-links {
   color: #fff;
-  margin: 0 0 10px;
-  padding: 0;
+  margin: 20px 0;
 }
-.footer-distributed .footer-left h3 .footer-links a {
+.footer-distributed .footer-left .footer-links a {
   display: inline-block;
   line-height: 1.8;
   text-decoration: none;
   color: #fff;
 }
-.footer-distributed .footer-left h3 .footer-company-name {
-  font-size: 14px;
-  font-weight: normal;
-  margin: 0;
-  color: #111;
+.footer-distributed .footer-left .footer-links a:hover {
+  color: #fe7600;
+}
+.footer-distributed .footer-left .footer-company-name {
+  margin: 5px 0px;
 }
 .footer-distributed .footer-right {
   float: right;
@@ -315,10 +308,7 @@ main p {
 .footer-distributed form input {
   display: block;
   border-radius: 3px;
-  box-sizing: border-box;
-  box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.1);
   border: none;
-  resize: none;
   font: inherit;
   font-size: 14px;
   font-weight: normal;
@@ -330,10 +320,7 @@ main p {
 .footer-distributed form textarea {
   display: block;
   border-radius: 3px;
-  box-sizing: border-box;
-  box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.1);
   border: none;
-  resize: none;
   font: inherit;
   font-size: 14px;
   font-weight: normal;
@@ -342,16 +329,18 @@ main p {
   height: 100px;
   margin-bottom: 20px;
 }
-.footer-distributed form button {
+.footer-distributed form a {
   border-radius: 3px;
   background-color: #fff;
+  text-decoration: none;
   color: #fe7600;
   border: 0;
   padding: 15px 50px;
   font-weight: bold;
   float: right;
+  cursor: pointer;
 }
-.footer-distributed form button:hover {
+.footer-distributed form a:hover {
   background-color: #fe7600;
   color: #fff;
 }
@@ -374,9 +363,6 @@ main p {
   .footer-distributed form {
     margin-top: 30px;
     display: block;
-  }
-  .footer-distributed form button {
-    float: none;
   }
 }
 @media screen and (max-width: 768px) {

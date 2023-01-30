@@ -270,18 +270,11 @@ main {
 
 .footer-distributed {
     background: $bdarkgrey;
-    box-sizing: border-box;
     padding: 50px 60px 40px;
     overflow: hidden;
 
     .footer-left {
         float: left;
-
-        h3 {
-            color: $cwhite;
-            font: normal 36px 'Roboto', cursive;
-            margin: 0 0 10px;
-
             span {
                 color: $corange;
                 text-decoration: none;
@@ -289,24 +282,24 @@ main {
 
             .footer-links {
                 color: $cwhite;
-                margin: 0 0 10px;
-                padding: 0;
-
+                margin:20px 0 ;
                 a {
                     display: inline-block;
                     line-height: 1.8;
                     text-decoration: none;
-                    color: $cwhite
+                    color: $cwhite;
+
+                    &:hover{
+                        color: $corange;
+                    }
+
                 }
             }
 
             .footer-company-name {
-                font-size: 14px;
-                font-weight: normal;
-                margin: 0;
-                color: $cblack;
+                margin: 5px 0px
             }
-        }
+        
     }
 
 
@@ -327,10 +320,7 @@ main {
         input {
             display: block;
             border-radius: 3px;
-            box-sizing: border-box;
-            box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.1);
             border: none;
-            resize: none;
             font: inherit;
             font-size: 14px;
             font-weight: normal;
@@ -343,10 +333,7 @@ main {
         textarea {
             display: block;
             border-radius: 3px;
-            box-sizing: border-box;
-            box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.1);
             border: none;
-            resize: none;
             font: inherit;
             font-size: 14px;
             font-weight: normal;
@@ -356,14 +343,16 @@ main {
             margin-bottom: 20px;
         }
 
-        button {
+       a{
             border-radius: 3px;
             background-color: $bwhite;
+            text-decoration: none;
             color: $corange;
             border: 0;
             padding: 15px 50px;
             font-weight: bold;
             float: right;
+            cursor: pointer;
 
             &:hover {
                 background-color: $borange;
@@ -394,9 +383,7 @@ main {
             margin-top: 30px;
             display: block;
 
-            button {
-                float: none;
-            }
+          
         }
     }
 }
