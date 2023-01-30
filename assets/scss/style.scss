@@ -269,137 +269,136 @@ main {
 //FOOTER
 
 .footer-distributed {
-	background: $bdarkgrey;
-	box-sizing: border-box;
-	width: 100%;
-	font: bold 16px sans-serif;
-	text-align: left;
-	padding: 50px 60px 40px;
-	overflow: hidden;
-	color:$cdarkgrey;
-	.footer-left {
-		float: left;
-	}
-	h3 {
-		color: $cwhite;
-		font: normal 36px 'Roboto', cursive;
-		margin: 0 0 10px;
-		span {
-			color: $corange;
-			text-decoration: none;
-		}
-	}
-	.footer-links {
-		color: $cwhite;
-		margin: 0 0 10px;
-		padding: 0;
-		a {
-			display: inline-block;
-			line-height: 1.8;
-			text-decoration: none;
-            color: $cwhite
-		}
-	}
-	.footer-company-name {
-		font-size: 14px;
-		font-weight: normal;
-		margin: 0;
-	}
-	.footer-icons {
-		margin-top: 40px;
-		a {
-			display: inline-block;
-			width: 35px;
-			height: 35px;
-			cursor: pointer;
-			background-color: $bwhite;
-			border-radius: 2px;
-			font-size: 20px;
-			color: $corange;
-			text-align: center;
-			line-height: 35px;
-			margin-right: 3px;
-			margin-bottom: 5px;
-		}
-	}
-	.footer-right {
-		float: right;
-		p {
-			display: inline-block;
-			vertical-align: top;
-			margin: 15px 42px 0 0;
-			color: $cwhite;
-		}
-	}
-	form {
-		display: inline-block;
-		input {
-			display: block;
-			border-radius: 3px;
-			box-sizing: border-box;
-			box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.1);
-			border: none;
-			resize: none;
-			font: inherit;
-			font-size: 14px;
-			font-weight: normal;
-			width: 325px;
-			padding: 18px;
-			height: 55px;
-			margin-bottom: 15px;
-		}
-		textarea {
-			display: block;
-			border-radius: 3px;
-			box-sizing: border-box;
-			box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.1);
-			border: none;
-			resize: none;
-			font: inherit;
-			font-size: 14px;
-			font-weight: normal;
-            width: 325px;
-			padding: 18px;
-			height: 100px;
-			margin-bottom: 20px;
-		}
-		button {
-			border-radius: 3px;
-			background-color: $bwhite;
-			color: $corange;
-			border: 0;
-			padding: 15px 50px;
-			font-weight: bold;
-			float: right;
+    background: $bdarkgrey;
+    box-sizing: border-box;
+    padding: 50px 60px 40px;
+    overflow: hidden;
 
-            &:hover{
+    .footer-left {
+        float: left;
 
+        h3 {
+            color: $cwhite;
+            font: normal 36px 'Roboto', cursive;
+            margin: 0 0 10px;
+
+            span {
+                color: $corange;
+                text-decoration: none;
             }
-		}
-	}
+
+            .footer-links {
+                color: $cwhite;
+                margin: 0 0 10px;
+                padding: 0;
+
+                a {
+                    display: inline-block;
+                    line-height: 1.8;
+                    text-decoration: none;
+                    color: $cwhite
+                }
+            }
+
+            .footer-company-name {
+                font-size: 14px;
+                font-weight: normal;
+                margin: 0;
+                color: $cblack;
+            }
+        }
+    }
+
+
+    .footer-right {
+        float: right;
+
+        p {
+            display: inline-block;
+            vertical-align: top;
+            margin: 15px 42px 0 0;
+            color: $cwhite;
+        }
+    }
+
+    form {
+        display: inline-block;
+
+        input {
+            display: block;
+            border-radius: 3px;
+            box-sizing: border-box;
+            box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.1);
+            border: none;
+            resize: none;
+            font: inherit;
+            font-size: 14px;
+            font-weight: normal;
+            width: 325px;
+            padding: 18px;
+            height: 55px;
+            margin-bottom: 15px;
+        }
+
+        textarea {
+            display: block;
+            border-radius: 3px;
+            box-sizing: border-box;
+            box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.1);
+            border: none;
+            resize: none;
+            font: inherit;
+            font-size: 14px;
+            font-weight: normal;
+            width: 325px;
+            padding: 18px;
+            height: 100px;
+            margin-bottom: 20px;
+        }
+
+        button {
+            border-radius: 3px;
+            background-color: $bwhite;
+            color: $corange;
+            border: 0;
+            padding: 15px 50px;
+            font-weight: bold;
+            float: right;
+
+            &:hover {
+                background-color: $borange;
+                color: $cwhite;
+            }
+        }
+    }
 }
+
 @media (max-width: 800px) {
-	.footer-distributed {
-		padding: 30px;
-		.footer-left {
-			float: none;
-			max-width: 300px;
-			margin: 0 auto;
-			margin-bottom: 40px;
-		}
-		.footer-right {
-			float: none;
-			max-width: 300px;
-			margin: 0 auto;
-		}
-		form {
-			margin-top: 30px;
-			display: block;
-			button {
-				float: none;
-			}
-		}
-	}
+    .footer-distributed {
+        padding: 30px;
+
+        .footer-left {
+            float: none;
+            max-width: 300px;
+            margin: 0 auto;
+            margin-bottom: 40px;
+        }
+
+        .footer-right {
+            float: none;
+            max-width: 300px;
+            margin: 0 auto;
+        }
+
+        form {
+            margin-top: 30px;
+            display: block;
+
+            button {
+                float: none;
+            }
+        }
+    }
 }
 
 
@@ -474,6 +473,7 @@ main {
     //CONTACT
     .contact {
         text-align: center;
+
         .contact-info {
             display: block;
         }
